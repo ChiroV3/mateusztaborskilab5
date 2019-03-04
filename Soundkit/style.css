@@ -1,0 +1,26 @@
+.container{
+    width:100%;
+    height:auto;
+    margin:100px auto 0 auto;
+    text-align:center;
+}
+.keyboard{
+    user-select:none;
+}
+.key {
+    width: 80px;
+    height: 80px;
+    background-color: #bbbbbb;
+    padding: 10px;
+    margin:5px;
+    display: inline-block;
+    box-shadow:black 2px 2px;
+    font: 40px Arial;
+}
+.key-pressed{
+    box-shadow:none;
+}
+.recordHolder{
+    width:100px;
+    height:100px;
+}

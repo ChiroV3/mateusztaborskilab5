@@ -1,0 +1,44 @@
+  body
+  {
+      background-color: rgb(69, 198, 202);
+  }
+  .hole, .rightHole, .temphole{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+  }
+  .container{
+      overflow: hidden;
+  }
+  .container button{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 200px;
+    height: 150px;
+    font-size: 3em;
+  }
+
+  .rightHole{
+    background: #17ad28;
+    z-index: -1;
+  }
+
+  .hole{
+    background: #000000;    
+  }
+  .temphole{
+    background: #17ad28;
+  }
+
+  #ball {
+    width: 40px;
+    position: absolute;
+    height: 40px;
+    border-radius: 50%;
+    background: blue;
+    top: 20px;
+    left: 20px;
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 >Photo Editor</h1>
+<div class="canvas-wrapper">
+    <canvas id="canvas"></canvas>
+</div>
+<div class="filters">
+    <div class="filter">
+        <label>Brightness</label>
+        <input type="number" min="1" max="50" value="1" onchange="brightness(this.value)">
+    </div>
+    <div class="filter">
+        <label>Hue</label>
+        <input type="number" min="0" max="360" value="1" onchange="hue(this.value)">
+    </div>
+    <div class="filter">
+        <label>Grayscale</label>
+        <input type="number" min="0" max="100" step="1" value="0" onchange="grayscale(this.value)">
+    </div>
+    <div class="filter">
+        <label>Saturate</label>
+        <input type="number" min="1" max="100" step="1" value="0" onchange="saturate(this.value)">
+    </div>
+    <div class="filter">
+        <label>Sepia</label>
+        <input type="number" min="0" max="100" step="1" value="0" onchange="sepia(this.value)">
+    </div>
+    <div class="filter">
+        <label>Contrast</label>
+        <input type="number" min="1" max="200" step="1" value="0" onchange="contrast(this.value)">
+    </div>
+    <div>
+        <label class="filter__label">Choose an image</label>
+        <input type="file" name="file" id="fileUpload" class="inputfile">
+    </div>
+</div>
+<div class="img-none">
+    <img id="source" src=""/>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>

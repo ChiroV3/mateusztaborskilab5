@@ -1,0 +1,76 @@
+body {
+    margin: 10px;
+    background-color: bisque;
+  }
+  .color{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+  }
+  .red{
+    background: red;
+  }
+  .black{
+    background: hsl(0, 1%, 21%);
+  }
+  .yellow{
+    background: #c0c05c;
+  }
+  .blue{
+    background: #638fe7;
+  }
+  .green{
+    background: rgb(158, 180, 145);
+  }
+  textarea {
+    resize: none;
+    
+  }
+  .firstNote {
+    color:  rgb(148, 108, 108);
+    border-radius: 15px;
+    padding: 20px;
+    order: 0;
+  }
+  .firstNote .noteDesc{
+    margin-top: 10px;
+  }
+  .firstNote .noteTitle{
+    height: 30px;
+  }
+  .firstNote footer{
+    padding-top: 10px;
+    text-align: right;
+  }
+  .note {
+    color: rgb(148, 108, 108);
+    border-radius: 15px;
+    padding: 20px;
+    order: 2;
+  }
+  .noteTitle{
+    text-align: center;
+  }
+  .noteDesc{
+    height: 150px;
+  
+  }
+  .noteTitle, .noteDesc{
+    width: 100%;
+    background-color: bur;
+    color:  rgb(148, 108, 108);
+  }
+  .noteFooter button, .noteFooter input{
+    float: right;
+  }
+  #wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, 400px);
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  .holder{
+    display: inline-block;
+  }
